@@ -1,0 +1,17 @@
+@import "variables";
+
+body {
+    background-color: #F8F9FF;
+}
+
+footer {
+    min-height: calc(100vw / 1.96319018404908);
+    background-image: url('/assets/images/background-bottom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px @horizontalPadding 50px @horizontalPadding;
+
+    @media (max-width: @breakpointM) {
+      padding-top: 400px;  
+    } 
+}

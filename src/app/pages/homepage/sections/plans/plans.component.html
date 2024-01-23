@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="title">Pricing Plans</div>
+    <div class="subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat
+        est.
+    </div>
+
+    <div class="plans">
+        <div class="plan" [class.selected]="_selectedIndex === i" *ngFor="let plan of plans; index as i;">
+            <span class="plan-title">{{plan.title}}</span>
+            <span class="plan-users">up to {{plan.users}} users</span>
+
+            <hr />
+
+            <div class="plan-price">
+                <div>
+                    <span class="currency">$</span>{{plan.price}}
+                </div>
+                <span>per month</span>
+            </div>
+
+            <a href="#!" (click)="_selectedIndex = i"
+                class="{{_selectedIndex === i ? 'btn-accent' : 'btn-default'}}">Order</a>
+        </div>
+    </div>
+</div>

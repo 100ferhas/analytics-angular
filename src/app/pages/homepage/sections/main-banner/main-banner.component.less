@@ -1,0 +1,49 @@
+@import 'variables';
+
+.container {
+    display: flex;
+    min-height: calc((100vw / 1.96319018404908) - 200px);
+    margin-top: -100px;
+    padding: 100px 0 100px @horizontalPadding;
+    background-image: url('/assets/images/background-top.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: @breakpointS) {
+        flex-direction: column-reverse;
+    }
+
+    .title {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+
+        .big {
+            color: #FFF;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 120%;
+        }
+
+        .small {
+            color: @primaryTextColor;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+
+    .image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+}

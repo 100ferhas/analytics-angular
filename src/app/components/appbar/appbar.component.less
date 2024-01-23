@@ -1,0 +1,33 @@
+@import 'variables';
+
+.appbar {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px @horizontalPadding;
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .links {
+        display: flex;
+        gap: 20px;
+
+        @media (max-width: @breakpointM) {
+            display: none;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media (max-width: @breakpointS) {
+            display: none;
+        }
+    }
+}

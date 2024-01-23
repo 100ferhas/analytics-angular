@@ -1,0 +1,42 @@
+@import "variables";
+
+.banner {
+    display: flex;
+    padding: 40px @horizontalPadding;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: @breakpointM) {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        &.reverse {
+            flex-direction: column;
+        }
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1;
+
+        .title {
+            color: @blackTextColor;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .description {
+            color: @primaryTextColor;
+            font-size: 18px;
+            line-height: 150%;
+        }
+    }
+
+    img {
+        min-width: 0;
+        max-width: 100%;
+        flex: 1;
+    }
+}

@@ -1,0 +1,16 @@
+<div class="container">
+    <span class="title">Main Features</span>
+    <span class="subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat
+        pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor
+        pulvinar risus pulvinar sit amet. Id vel in nam malesuada.
+    </span>
+
+    <div class="features">
+        <div class="feature" *ngFor="let feature of features">
+            <img src="{{feature.icon}}" alt="icon" />
+            <span class="feature-title">{{feature.title}}</span>
+            <span class="feature-desc">{{feature.description}}</span>
+        </div>
+    </div>
+</div>

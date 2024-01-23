@@ -1,0 +1,14 @@
+<div [class.reverse]="reverse" class="banner">
+    @if (reverse) {
+    <img src="{{image}}" alt="banner-img" />
+    }
+
+    <div class="content">
+        <span class="title">{{title}}</span>
+        <span class="description">{{description}}</span>
+    </div>
+
+    @if (!reverse) {
+    <img src="{{image}}" alt="banner-img" />
+    }
+</div>
