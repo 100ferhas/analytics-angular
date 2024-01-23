@@ -4,6 +4,7 @@ import { MainBannerComponent } from './sections/main-banner/main-banner.componen
 import { MainFeaturesComponent } from './sections/main-features/main-features.component';
 import { BannerComponent } from '../../components/banner/banner.component';
 import { PlansComponent } from './sections/plans/plans.component';
+import { AppFooterComponent } from '../../components/app-footer/app-footer.component';
 
 @Component({
   selector: 'app-homepage',
@@ -14,6 +15,7 @@ import { PlansComponent } from './sections/plans/plans.component';
     MainFeaturesComponent,
     BannerComponent,
     PlansComponent,
+    AppFooterComponent,
   ],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.less'

@@ -1,6 +1,8 @@
 <div [class.reverse]="reverse" class="banner">
     @if (reverse) {
-    <img src="{{image}}" alt="banner-img" />
+    <div class="image">
+        <img src="{{image}}" alt="banner-img" />
+    </div>
     }
 
     <div class="content">
@@ -9,6 +11,8 @@
     </div>
 
     @if (!reverse) {
-    <img src="{{image}}" alt="banner-img" />
+    <div class="image">
+        <img src="{{image}}" alt="banner-img" />
+    </div>
     }
 </div>

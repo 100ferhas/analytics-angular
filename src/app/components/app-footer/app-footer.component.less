@@ -1,0 +1,23 @@
+@import "variables";
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 0 0;
+
+    @media (max-width: @breakpointS) {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .links {
+        display: flex;
+        gap: 40px;
+    }
+
+    .social {
+        display: flex;
+        gap: 40px;
+    }
+}
